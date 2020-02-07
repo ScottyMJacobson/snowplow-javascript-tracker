@@ -41,7 +41,7 @@
   "description": "JavaScript tracker for Snowplow",
   "repository": {
     "type": "git",
-    "url": "https://github.com/snowplow/snowplow-javascript-tracker.git"
+    "url": "https://github.com/EkoLabs/snowplow-javascript-tracker.git"
   },
   "bugs": "https://github.com/snowplow/snowplow-javascript-tracker/issues",
   "keywords": [
