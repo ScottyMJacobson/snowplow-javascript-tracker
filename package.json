@@ -3,7 +3,7 @@
   "version": "2.10.1",
   "scripts": {
     "build": "grunt",
-    "prepare": "npm run build",
+    "prepare": "npm install --ignore-scripts && run build",
     "postinstall": "npm run prepare"
   },
   "main": "dist/snowplow",
