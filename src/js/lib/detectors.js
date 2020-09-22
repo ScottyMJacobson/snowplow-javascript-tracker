@@ -39,7 +39,7 @@
 		isUndefined = require('lodash/isUndefined'),
 		murmurhash3_32_gc = require('murmurhash').v3,
 		tz = require('jstimezonedetect').jstz.determine(),
-		cookie = require('browser-cookie-lite'),
+		helpers = require('./helpers'),
 
 		object = typeof exports !== 'undefined' ? exports : this, // For eventual node.js environment support
 		
@@ -100,8 +100,8 @@
 		var cookieName = testCookieName || 'testcookie';
 
 		if (isUndefined(navigatorAlias.cookieEnabled)) {
-			cookie.cookie(cookieName, '1');
-			return cookie.cookie(cookieName) === '1' ? '1' : '0';
+			helpers.cookie(cookieName, '1');
+			return helpers.cookie(cookieName) === '1' ? '1' : '0';
 		}
 
 		return navigatorAlias.cookieEnabled ? '1' : '0';
